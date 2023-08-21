@@ -1,0 +1,60 @@
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        
+        .register-form {
+            width: 250px;
+            height: 300px;
+            border: 1px solid gray;
+            box-shadow: 2px 2px 2px black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="frmRegister" method="get" name="RegisterForm" class="register-form">
+        <h3>Register User</h3>
+        <dl>
+            <dt>Select Your City</dt>
+            <dd>
+                <select name="City">
+                    <option>Choose City</option>
+                    <option value="1100039">Delhi</option>
+                    <option value="5000042">Hyd</option>
+                </select>
+            </dd>
+            <dt>Select Product</dt>
+            <dd>
+                <select name="Product">
+                    <option>Choose Product</option>
+                    <optgroup label="Electronics">
+                        <option>Televisions</option>
+                        <option>Mobiles</option>
+                    </optgroup>
+                    <optgroup label="Footwear">
+                        <option>Casuals</option>
+                        <option selected>Boots</option>
+                        <option disabled>Sneakers</option>
+                    </optgroup>
+                </select>
+            </dd>
+        </dl>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
